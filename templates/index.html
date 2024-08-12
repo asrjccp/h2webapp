@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Upload</title>
+	</head>
+	<body>
+		<form method="post" enctype="multipart/form-data">
+			Image: <input name="image" type="file"><br />
+			<input type="submit">
+		</form>
+		<p><a href="{{ url_for('view') }}">View</a></p>
+		{% if status %}
+		{{ status }}
+		{% endif %}
+	</body>
+</html>
